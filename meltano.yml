@@ -1,0 +1,17 @@
+version: 1
+send_anonymous_usage_stats: true
+project_readonly: true
+project_id: tap-wordpress
+plugins:
+  extractors:
+  - name: tap-wordpress
+    pip_url: git+https://github.com/leag/tap-wordpress.git
+    namespace: tap_wordpress
+    capabilities:
+    - state
+    - catalog
+    - discover
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
