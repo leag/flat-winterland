@@ -23,5 +23,6 @@ jobs:
         run: |
           git config --global user.name "Luis Atala"
           git config --global user.email "luis@atala.co"
-          git add output git commit -m "update output file"
+          git add output
+          git commit -m "update output file"
           git push
