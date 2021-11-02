@@ -2,7 +2,7 @@ name: extract
 on:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: {}
 jobs:
   scheduled:
     runs-on: ubuntu-latest
@@ -19,3 +19,9 @@ jobs:
         with:
           name: output
           path: output/*.jsonl
+      - name: push changes to remote
+        run: |
+          git config --global user.name "Luis Atala"
+          git config --global user.email "luis@atala.co"
+          git add output git commit -m "update output file"
+          git push
