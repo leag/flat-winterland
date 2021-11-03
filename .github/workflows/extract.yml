@@ -29,6 +29,7 @@ jobs:
       #     name: output
       #     path: output/*.jsonl
       - name: push changes to remote
+        continue-on-error: true
         run: |
           git config --global user.name "Luis Atala"
           git config --global user.email "luis@atala.co"
