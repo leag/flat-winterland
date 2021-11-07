@@ -1,6 +1,6 @@
 version: 1
 send_anonymous_usage_stats: true
-project_id: ef23acdb-7168-4644-98f9-4357caac0014
+project_id: ef23acdb-7168-4644-98f9-4357caac0015
 plugins:
   extractors:
   - name: tap-wordpress
