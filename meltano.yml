@@ -10,7 +10,22 @@ plugins:
     - state
     - catalog
     - discover
+    select:
+    - products.id
+    - products.name
+    - products.permalink
+    - products.prices
+    - products.prices.price
+    - products.prices.regular_price
+    - products.prices.sale_price
+    - products.is_purchasable
+    - products.on_sale
+    - products.is_in_stock
+    - products.low_stock_remaining
   loaders:
   - name: target-jsonl
     variant: andyh1203
     pip_url: target-jsonl
+  # - name: target-csv
+  #   variant: hotgluexyz
+  #   pip_url: git+https://github.com/hotgluexyz/target-csv.git@0.3.3
