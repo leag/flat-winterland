@@ -16,7 +16,7 @@ jobs:
       #   with:
       #     path: ${{ env.pythonLocation }}
       #     key: ${{ hashFiles('meltano.yml') }}-pip
-      - run: python -m pip install meltano==1.86.0
+      - run: python -m pip install meltano
       # - uses: actions/cache@v2
       #   with:
       #     path: ./.meltano
