@@ -1,7 +1,7 @@
 name: extract
 on:
-  schedule:
-    - cron: '0 */12 * * *'
+  schedule: [] # disable scheduled runs
+    # - cron: '0 */12 * * *'
   workflow_dispatch: {}
 jobs:
   scheduled:
