@@ -16,14 +16,14 @@ jobs:
       #   with:
       #     path: ${{ env.pythonLocation }}
       #     key: ${{ hashFiles('meltano.yml') }}-pip
-      - run: python -m pip install meltano==2.4.0
+      - run: python -m pip install meltano==3.1.0
       # - uses: actions/cache@v2
       #   with:
       #     path: ./.meltano
       #     key: ${{ hashFiles('meltano.yml') }}-meltano
       - run: meltano install
       - run: rm output/*.jsonl
-      - run: meltano elt tap-wordpress target-jsonl
+      - run: meltano el tap-wordpress target-jsonl
       # - uses: actions/upload-artifact@v2
       #   with:
       #     name: output

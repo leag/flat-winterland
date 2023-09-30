@@ -26,6 +26,15 @@ plugins:
   - name: target-jsonl
     variant: andyh1203
     pip_url: target-jsonl
-  # - name: target-csv
-  #   variant: hotgluexyz
-  #   pip_url: git+https://github.com/hotgluexyz/target-csv.git@0.3.3
+annotations:
+  github:
+    repo: leag/tap-wordpress
+    release: 0.1.0
+    commit: 0.1.0
+    tag: 0.1.0
+    branch: master
+    issues_url: https://github.com/leag/tap-wordpress/issues
+    documentation_url: https://github.com/leag/tap-wordpress/wiki
+    homepage_url: https://github.com/leag/tap-wordpress
+  meltano:
+    version: 3.1.0
